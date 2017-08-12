@@ -15,7 +15,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @Path("paises")
 @Consumes(MediaType.APPLICATION_JSON)

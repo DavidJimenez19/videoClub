@@ -24,7 +24,7 @@ import org.joda.time.DateTime;
 
 /**
  *
- * @author ruber19
+ * @author davidj
  */
 @Provider
 @Priority(Priorities.AUTHENTICATION)

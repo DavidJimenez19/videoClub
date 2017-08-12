@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author ruber19
+ * @author davidj
  */
 public class DigestUtil {
 

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  *
- * @author ruber19
+ * @author davidj
  */
 public class Token {
 

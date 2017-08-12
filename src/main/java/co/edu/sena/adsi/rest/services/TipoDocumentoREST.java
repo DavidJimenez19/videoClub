@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @Path("tipos_documentos")
 @Consumes(MediaType.APPLICATION_JSON)

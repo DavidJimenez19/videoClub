@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @Path("roles")
 @Consumes(MediaType.APPLICATION_JSON)

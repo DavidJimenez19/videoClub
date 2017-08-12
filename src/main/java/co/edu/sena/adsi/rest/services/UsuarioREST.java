@@ -20,7 +20,7 @@ import javax.ws.rs.core.Response;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @Path("usuarios")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -72,7 +72,7 @@ public class UsuarioREST {
                     usuario.setPassword(
                             DigestUtil
                                     .cifrarPassword(usuario.getPassword()));
-
+                    usuario.setActivo(Boolean.TRUE);
                     usuarioEJB.create(usuario);
 
                     return Response.status(Response.Status.CREATED)

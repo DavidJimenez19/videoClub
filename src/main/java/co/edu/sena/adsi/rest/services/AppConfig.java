@@ -7,7 +7,7 @@ import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @ApplicationPath("api")
 public class AppConfig extends ResourceConfig{

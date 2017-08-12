@@ -14,7 +14,7 @@ import javax.persistence.criteria.Root;
 
 /**
  *
- * @author ruberr
+ * @author davidj
  */
 @Stateless
 public class UsuarioFacade extends AbstractFacade<Usuario> {
