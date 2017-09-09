@@ -15,6 +15,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -31,14 +32,29 @@ public class UsuarioREST {
     private UsuarioFacade usuarioEJB;
 
     /**
-     * Obtiene todos los usuarioes
+     * Obtiene todos los usuarios
      *
+     * @param idUsuario
+     * @param sexo
+     * @param activo
+     * @param numDocumento
+     * @param email
+     * @param idCiudad
+     * @param idDepartamento
      * @return lista de usuarios
-     */
+     */   
     @GET
-    @RolesAllowed({"ADMIN"})
-    public List<Usuario> findAll() {
-        return usuarioEJB.findAll();
+    //@RolesAllowed({"ADMIN"})
+    public List<Usuario> findAll(@QueryParam("idUsuario") Integer idUsuario,
+            @QueryParam("sex") String sexo,
+            @QueryParam("active") Boolean activo,
+            @QueryParam("numDocumento") String numDocumento,
+            @QueryParam("email") String email,
+            @QueryParam("idCity") Integer idCiudad,
+            @QueryParam("idDepartament") Integer idDepartamento){
+
+        return usuarioEJB.findUsuarios(idUsuario, sexo, activo, numDocumento, email, 
+                idCiudad, idDepartamento);
     }
 
     /**
