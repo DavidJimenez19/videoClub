@@ -76,7 +76,7 @@ public class CiudadREST {
     @GET
     @Path("find")
     public List<Ciudad> findByNombre(
-            @QueryParam("name") String nombreCiudad,
+            @QueryParam("nombre") String nombreCiudad,
             @QueryParam("idDepartamento") Integer idDepartamento) {
         return ciudadEJB.findCiudadByNombre(nombreCiudad, idDepartamento);
     }
