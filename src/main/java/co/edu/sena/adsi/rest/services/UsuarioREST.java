@@ -44,7 +44,7 @@ public class UsuarioREST {
      * @return lista de usuarios
      */   
     @GET
-    //@RolesAllowed({"ADMIN"})
+    @RolesAllowed({"ADMIN"})
     public List<Usuario> findAll(@QueryParam("idUsuario") Integer idUsuario,
             @QueryParam("sex") String sexo,
             @QueryParam("active") Boolean activo,
